@@ -1,0 +1,283 @@
+/* 1. Reset osnovnih margina i paddinga za sve elemente */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Osnovni stil za cijelu stranicu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* 3. Header dio stranice */
+header {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* 4. Banner slika unutar headera */
+.banner img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* 5. Navigacija ispod bannera */
+nav {
+    background-color: #333333;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* 6. Lista u navigaciji */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 7. Stavke liste u navigaciji */
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* 8. Linkovi u navigaciji */
+a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+/* 9. Glavni sadržaj (main) */
+main {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+}
+
+/* 2.1 Glavni naslov na stranici */
+main h1 {
+    text-align: center;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+/* 2.2 Podnaslovi u main dijelu */
+main h2 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 20px;
+}
+
+/* 2.3 Svi odlomci u main dijelu */
+main p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* 2.4 Uvodni odlomak */
+.uvod {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 2.5 Odlomak s godinom osnivanja */
+#osnovan {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+/* 2.6 Naglašene riječi u tekstu */
+.vazno {
+    color: green;
+    font-weight: bold;
+}
+
+/* 2.7 Poveznica na službenu LEGO stranicu */
+.lego-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    color: blue;
+    background-color: #ffffff;
+}
+
+/* 2.8 Slika LEGO seta u main dijelu */
+.lego-slika {
+    width: 300px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 2.9 Popis popularnih LEGO tema */
+.lista-tema {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/* 2.10 Napomena na dnu main dijela */
+.napomena {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 11. Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* a) Stil za tablicu rasporeda */
+.raspored {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* b) Stil za naslov tablice (caption) */
+.raspored caption {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* c) Stil za ćelije (zaglavlja i podatke) */
+.raspored th,
+.raspored td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* d) Stil posebno za zaglavlje tablice */
+.raspored th {
+    background-color: #fff7cc;
+}
+
+/* === KONTAKT FORMA I PSEUDO-KLASE (vjezba_15) === */
+
+/* Osnovni izgled kontakt sekcije */
+.lego-contact {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.lego-contact h2 {
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.lego-contact > p {
+    margin-bottom: 16px;
+    color: #555555;
+}
+
+/* Razmak između redaka forme */
+.lego-form .form-row {
+    margin-bottom: 14px;
+}
+
+/* Labele i opcije */
+.lego-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.lego-form .option {
+    margin-bottom: 6px;
+}
+
+.lego-form .option label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+/* Osnovni izgled tekstualnih polja, selecta i textarea */
+.lego-form input[type="text"],
+.lego-form input[type="email"],
+.lego-form select,
+.lego-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+/* Omogućena polja (:enabled) */
+.lego-form input:enabled,
+.lego-form select:enabled,
+.lego-form textarea:enabled {
+    background-color: #ffffff;
+}
+
+/* Fokusirano polje (:focus) */
+.lego-form input:focus,
+.lego-form select:focus,
+.lego-form textarea:focus {
+    border-color: #007bff;
+    background-color: #eef6ff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Označeni checkbox i radio gumbi (:checked + label) */
+.lego-form input[type="checkbox"]:checked + label,
+.lego-form input[type="radio"]:checked + label {
+    font-weight: 700;
+    color: #1a7f1a;
+}
+
+/* Onemogućeno polje (:disabled) */
+.lego-form input:disabled {
+    background-color: #eeeeee;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+/* Gumb za slanje i :hover */
+.btn-send {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #218838;
+}
