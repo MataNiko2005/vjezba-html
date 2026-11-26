@@ -1,0 +1,380 @@
+/* 1. Reset osnovnih margina i paddinga za sve elemente */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Osnovni stil za cijelu stranicu */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* 3. Header dio stranice */
+header {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* 4. Banner slika unutar headera */
+.banner img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* 5. Navigacija ispod bannera */
+nav {
+    background-color: #333333;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* 6. Lista u navigaciji */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 7. Stavke liste u navigaciji */
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* 8. Linkovi u navigaciji */
+a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+/* 1.2.1 Osnovni izgled linkova u glavnom izborniku */
+.main-nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+/* 1.2.2 Pseudo-klase na linkovima u meniju */
+.main-nav a:visited {
+    color: #e0e0e0;
+}
+
+.main-nav a:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.main-nav a:focus {
+    background-color: #555555;
+    color: #ffffff;
+    outline: 2px solid #ffffff;
+}
+
+.main-nav a:active {
+    transform: scale(0.97);
+}
+
+/* 1.2.3 Selektori atributa i ::after na linkovima u meniju */
+nav.main-nav a[href*="galerija"] {
+    border-color: #ffcc00;
+    color: #ffcc00;
+}
+
+nav.main-nav a[target="_blank"] {
+    background-color: #1e4e8c;
+    border-color: #66a3ff;
+}
+
+nav.main-nav a[target="_blank"]::after {
+    content: " ↗";
+}
+
+/* 9. Glavni sadržaj (main) */
+main {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+}
+
+/* 2.1 Glavni naslov na stranici */
+main h1 {
+    text-align: center;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+/* 2.2 Podnaslovi u main dijelu */
+main h2 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 20px;
+}
+
+/* 2.3 Svi odlomci u main dijelu */
+main p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* 2.4 Uvodni odlomak */
+.uvod {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 2.5 Odlomak s godinom osnivanja */
+#osnovan {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+/* 2.6 Naglašene riječi u tekstu */
+.vazno {
+    color: green;
+    font-weight: bold;
+}
+
+/* 2.7 Poveznica na službenu LEGO stranicu */
+.lego-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    color: blue;
+    background-color: #ffffff;
+}
+
+/* 2.8 Slika LEGO seta u main dijelu */
+.lego-slika {
+    width: 300px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 2.9 Popis popularnih LEGO tema */
+.lista-tema {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+/* 2.10 Napomena na dnu main dijela */
+.napomena {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 11. Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* a) Stil za tablicu rasporeda */
+.raspored {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* b) Stil za naslov tablice (caption) */
+.raspored caption {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* c) Stil za ćelije (zaglavlja i podatke) */
+.raspored th,
+.raspored td {
+    border: 1px solid #cccccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* d) Stil posebno za zaglavlje tablice */
+.raspored th {
+    background-color: #fff7cc;
+}
+
+/* === KONTAKT FORMA I PSEUDO-KLASE === */
+
+.lego-contact {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+.lego-contact h2 {
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.lego-contact > p {
+    margin-bottom: 16px;
+    color: #555555;
+}
+
+.lego-form .form-row {
+    margin-bottom: 14px;
+}
+
+.lego-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.lego-form .option {
+    margin-bottom: 6px;
+}
+
+.lego-form .option label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.lego-form input[type="text"],
+.lego-form input[type="email"],
+.lego-form select,
+.lego-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.lego-form input:enabled,
+.lego-form select:enabled,
+.lego-form textarea:enabled {
+    background-color: #ffffff;
+}
+
+.lego-form input:focus,
+.lego-form select:focus,
+.lego-form textarea:focus {
+    border-color: #007bff;
+    background-color: #eef6ff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.lego-form input[type="checkbox"]:checked + label,
+.lego-form input[type="radio"]:checked + label {
+    font-weight: 700;
+    color: #1a7f1a;
+}
+
+.lego-form input:disabled {
+    background-color: #eeeeee;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.btn-send {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #218838;
+}
+
+/* === GALERIJA SLIKA I SELEKTORI ATRIBUTA === */
+
+.lego-gallery {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 10px;
+}
+
+.lego-gallery h2 {
+    margin-bottom: 6px;
+}
+
+.lego-gallery > p {
+    margin-bottom: 16px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-row img {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Selektor prisutnosti atributa [alt] i ekstenzije [src$=".jpg"] */
+.lego-gallery img[alt] {
+    box-sizing: border-box;
+}
+
+.lego-gallery img[src$=".jpg"] {
+    border-radius: 8px;
+}
+
+/* Selektori vrijednosti atributa data-set */
+.lego-gallery img[data-set="city"] {
+    border: 4px solid blue;
+}
+
+.lego-gallery img[data-set="technic"] {
+    border: 4px solid orange;
+}
+
+.lego-gallery img[data-set="friends"] {
+    border: 4px solid deeppink;
+}
+
+/* Pseudo-klasa :hover na slikama u galeriji */
+.lego-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
